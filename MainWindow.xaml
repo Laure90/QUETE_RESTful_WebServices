@@ -1,0 +1,21 @@
+﻿<Window x:Class="QUETE_RESTful_WebServices.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QUETE_RESTful_WebServices"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="504" Width="889">
+    <Grid>
+        <Label Content="Put an id :" Margin="188,24,616,417"></Label>
+        <ComboBox x:Name="FilterNameComboBox" Margin="32,19,717,417">
+            <ComboBoxItem Name="postComboBox">Posts</ComboBoxItem>
+            <ComboBoxItem Name="commentComboBox">Comments</ComboBoxItem>
+            <ComboBoxItem Name="photoComboBox">Photos</ComboBoxItem>
+        </ComboBox>
+        <TextBox Name="InputUserTextBox" Margin="278,22,403,417"></TextBox>
+        <Button Name="Send" Click="Send_Click" Margin="529,22,268,417">Send</Button>
+        <Button Name="Reset" Click="Reset_Click"  Margin="686,22,113,417">Reset</Button>
+        <TextBox Name="AnswerTextBox" Margin="32,103,47,31" VerticalScrollBarVisibility="Visible"></TextBox>
+    </Grid>
+</Window>
